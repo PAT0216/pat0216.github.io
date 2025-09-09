@@ -1,7 +1,7 @@
 ---
-title: "QuartoWebsiteTest"
+title: "The is Prabuddha Tamhane's Website."
 ---
 
-This is a Quarto website.
+This website should show successful deployment of a website on github pages using quarto and git.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+

@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+Hey, This is Prabuddha Tamhane. A passionate problem solver who chose Data Science and analytics as a way to solve real-world problems.
