@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "QuartoWebsiteTest"
+  title: "pat0216.github.io"
   navbar:
     left:
       - href: index.qmd
