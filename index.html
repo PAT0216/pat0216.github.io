@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabuddha Tamhane | Quant Aspirant & Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">PT<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="line">Prabuddha</span>
+                <span class="line">Tamhane<span class="accent">.</span></span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Quant Aspirant | Data Science</span>
+            </p>
+            <p class="hero-description">
+                Building data-driven solutions at the intersection of 
+                <span class="highlight">finance</span> and 
+                <span class="highlight">machine learning</span>. 
+                Master's candidate at UBC with a unique dual MBA-Tech background.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">20.3%</span>
+                    <span class="stat-label">CAGR (Backtested)</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">0.96</span>
+                    <span class="stat-label">Sharpe Ratio</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">98%</span>
+                    <span class="stat-label">ML Model Accuracy</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="chart-container">
+                <svg class="performance-chart" viewBox="0 0 400 200" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(0, 255, 136, 0.3)"/>
+                            <stop offset="100%" stop-color="rgba(0, 255, 136, 0)"/>
+                        </linearGradient>
+                    </defs>
+                    <path class="chart-area" d="M0,180 L50,170 L100,160 L150,140 L200,120 L250,80 L300,60 L350,30 L400,10 L400,200 L0,200 Z" fill="url(#chartGradient)"/>
+                    <path class="chart-line" d="M0,180 L50,170 L100,160 L150,140 L200,120 L250,80 L300,60 L350,30 L400,10" fill="none" stroke="#00ff88" stroke-width="2"/>
+                    <path class="chart-benchmark" d="M0,180 L50,175 L100,172 L150,168 L200,160 L250,155 L300,148 L350,142 L400,135" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+                </svg>
+                <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-dot momentum"></span>Momentum Strategy</span>
+                    <span class="legend-item"><span class="legend-dot benchmark"></span>S&P 500</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a data scientist with a deep-seated passion for finance and technology, 
+                        currently pursuing a <strong>Master of Data Science</strong> at the 
+                        <strong>University of British Columbia</strong>.
+                    </p>
+                    <p>
+                        My background is uniquely positioned at the intersection of quantitative analysis 
+                        and software engineering. I hold a dual degree from NMIMS—an MBA in Finance and 
+                        B.Tech in Computer Engineering—giving me both the financial intuition and 
+                        technical depth to build sophisticated data-driven solutions.
+                    </p>
+                    <p>
+                        I've developed production-grade trading algorithms that outperform market benchmarks, 
+                        built predictive models for healthcare diagnostics, and engineered systems that handle 
+                        high-volume transactional data. My goal is to leverage these skills in 
+                        <strong>quantitative finance, data science, or financial analytics</strong>.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Master of Data Science, UBC (2025-2026)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>MBA Finance + B.Tech Computer Engineering</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Published Research in Predictive Modeling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                <img src="headshot.jpg" alt="Prabuddha Tamhane" class="profile-photo">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <!-- Featured Project: Paper Trader -->
+            <div class="project-featured">
+                <div class="project-featured-content">
+                    <span class="project-label">Featured Project</span>
+                    <h3 class="project-title">Paper Trader AI</h3>
+                    <div class="project-description">
+                        <p>
+                            A production-grade algorithmic trading system featuring a <strong>Dual Portfolio Architecture</strong> 
+                            that runs two independent strategies simultaneously. The momentum strategy achieved a 
+                            <strong>20.3% CAGR</strong> with a <strong>0.96 Sharpe ratio</strong> over the 2022-2024 
+                            backtesting period, outperforming the S&P 500 benchmark.
+                        </p>
+                        <p class="disclaimer">* All metrics are from backtested simulations, not actual trading.</p>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value positive">+20.3%</span>
+                            <span class="metric-label">CAGR</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">0.96</span>
+                            <span class="metric-label">Sharpe</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">2022-24</span>
+                            <span class="metric-label">Period</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">503</span>
+                            <span class="metric-label">Tickers</span>
+                        </div>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>XGBoost</li>
+                        <li>Pandas</li>
+                        <li>GitHub Actions</li>
+                        <li>Streamlit</li>
+                        <li>SQLite</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/PAT0216/paper-trader" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-featured-visual">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">paper-trader</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="comment"># Run momentum strategy</span>
+<span class="prompt">$</span> python main.py --strategy momentum
+
+<span class="output">Loading S&P 500 data... ✓</span>
+<span class="output">Computing 12-month momentum factors...</span>
+<span class="output">Applying 15% stop-loss protection...</span>
+<span class="output">Selecting top 10 stocks...</span>
+
+<span class="success">Backtest Results (2022-2024):</span>
+<span class="metric-line">  CAGR:        <span class="value-green">20.3%</span></span>
+<span class="metric-line">  Sharpe:      <span class="value-green">0.96</span></span>
+<span class="metric-line">  Max DD:      <span class="value-red">-15.8%</span></span>
+<span class="metric-line">  vs S&P 500:  <span class="value-green">+7.1%</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        <div class="project-card-links">
+                            <a href="#" aria-label="View project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">Brain Tumor MRI Classification</h4>
+                    <p class="project-card-description">
+                        Deep learning classification model using KNN, SVM, CNN, and VGG16 on 3,200+ brain MRI scans. 
+                        Achieved 98% accuracy in tumor detection.
+                    </p>
+                    <ul class="project-card-tech">
+                        <li>TensorFlow</li>
+                        <li>Scikit-learn</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                        <div class="project-card-links">
+                            <a href="#" aria-label="View project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">Mumbai Transit Forecasting</h4>
+                    <p class="project-card-description">
+                        Real-time passenger traffic prediction system using ARIMA and YOLOv5 object detection, 
+                        forecasting up to 30 minutes ahead with 95% detection accuracy.
+                    </p>
+                    <ul class="project-card-tech">
+                        <li>Python</li>
+                        <li>ARIMA</li>
+                        <li>YOLOv5</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <div class="project-card-links">
+                            <a href="https://journalspub.com/publication/ijippr-v10i02-11116/" target="_blank" aria-label="View publication">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">Employee Attrition Prediction</h4>
+                    <p class="project-card-description">
+                        <strong>Published research</strong> comparing Logistic Regression, Decision Tree, and Random Forest 
+                        for HR analytics, achieving 91% prediction accuracy.
+                    </p>
+                    <ul class="project-card-tech">
+                        <li>Python</li>
+                        <li>SPSS</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Business Analyst Intern</h3>
+                            <span class="timeline-company">Prudent Corporate Advisory Services</span>
+                        </div>
+                        <span class="timeline-date">May 2024 — Sep 2024</span>
+                        <ul class="timeline-details">
+                            <li>Analyzed 5+ years of historical performance data for 50+ mutual funds to develop a data-driven model, improving product basket construction by 15%</li>
+                            <li>Built a business expansion model using Python and SQL for geospatial and revenue forecast analysis across 10 markets</li>
+                            <li>Conducted deep-dive revenue analysis across 15 branches and 4 sectors, identifying key performance drivers</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Financial Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="timeline-company">Datamatics Global Services</span>
+                        </div>
+                        <span class="timeline-date">May 2023 — Jun 2023</span>
+                        <ul class="timeline-details">
+                            <li>Authored and optimized complex SQL stored procedures handling 10,000+ daily transactions, reducing query latency by 25%</li>
+                            <li>Implemented dynamic data filtering and visualization using JavaScript and ASP.NET MVC, reducing report generation time by 40%</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>ASP.NET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        Languages
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Python</span>
+                        <span class="skill-tag primary">SQL</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                        ML & Data Science
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Pandas</span>
+                        <span class="skill-tag primary">Scikit-learn</span>
+                        <span class="skill-tag primary">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">XGBoost</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                        Visualization
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Plotly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                        Databases & Tools
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm actively seeking opportunities in <strong>data science</strong>, 
+                    <strong>quantitative analysis</strong>, and <strong>financial analytics</strong>. 
+                    Whether you have a role in mind, a project to discuss, or just want to connect—
+                    I'd love to hear from you.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:prabuddha.tamhane@gmail.com" class="btn btn-primary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        prabuddha.tamhane@gmail.com
+                    </a>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/prabuddha-tamhane" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/PAT0216" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Prabuddha Tamhane</p>
+            <p class="footer-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Vancouver, BC
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
