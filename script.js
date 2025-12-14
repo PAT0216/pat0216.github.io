@@ -166,6 +166,11 @@ function initTypingEffect() {
         'Aspiring Algorithmic Trader'
     ];
 
+    // Lock the width of the typing area to avoid layout shifts while text deletes/types
+    const maxLen = roles.reduce((m, r) => Math.max(m, r.length), 0);
+    typingElement.style.display = 'inline-block';
+    typingElement.style.minWidth = `${maxLen}ch`;
+
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

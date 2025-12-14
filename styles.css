@@ -271,6 +271,14 @@ body {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.3s;
     opacity: 0;
+    /* Prevent layout shift while typing text changes */
+    min-height: 1.6em;
+}
+
+.typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    /* width is set dynamically in JS based on longest role */
 }
 
 .hero-description {
