@@ -1125,6 +1125,13 @@ body {
         order: -1;
         max-width: 200px;
         margin: 0 auto;
+        position: static; /* disable sticky on mobile to prevent overlap */
+        top: auto;
+    }
+
+    .image-frame {
+        position: relative;
+        z-index: 1; /* ensure photo stays behind text flow if any stacking happens */
     }
     
     .project-featured {
