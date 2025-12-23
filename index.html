@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pat0216.github.io/">
     <meta property="og:title" content="Prabuddha Tamhane | Quant Aspirant & Data Scientist">
-    <meta property="og:description" content="Building data-driven solutions at the intersection of finance and machine learning. 17.3% CAGR (2016–2025 point-in-time backtest) momentum strategy. UBC Master's candidate.">
+    <meta property="og:description" content="Building data-driven solutions at the intersection of finance and machine learning. I built a trading system that runs itself—3 ML models competing live. UBC Master's candidate.">
     <meta property="og:image" content="https://pat0216.github.io/headshot.jpg">
     
     <!-- Twitter -->
@@ -69,16 +69,16 @@
             </p>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-value">17.3%</span>
-                    <span class="stat-label">CAGR (2016–2025 Backtest)</span>
+                    <span class="stat-value">4.3M+</span>
+                    <span class="stat-label">Data Points Processed</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">+2.3%</span>
-                    <span class="stat-label">CAGR vs S&P 500</span>
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Models Competing Live</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">98%</span>
-                    <span class="stat-label">ML Model Accuracy</span>
+                    <span class="stat-value">9 Years</span>
+                    <span class="stat-label">Backtested (2016–2025)</span>
                 </div>
             </div>
             <div class="hero-cta">
@@ -188,45 +188,52 @@
                     <h3 class="project-title">Paper Trader AI</h3>
                     <div class="project-description">
                         <p>
-                            A production-grade algorithmic trading system featuring a <strong>Dual Portfolio Architecture</strong> 
-                            that runs two independent strategies simultaneously. The momentum strategy achieved a 
-                            <strong>17.3% CAGR</strong> in a <strong>point‑in‑time</strong> backtest from <strong>2016–2025</strong>,
-                            beating the S&P 500 by <strong>+2.3% CAGR</strong>.
+                            <strong>I built a trading system that runs itself.</strong> Three strategies compete 
+                            head-to-head on the S&P 500: momentum, XGBoost, and LSTM. Backtested on 9 years of data, 
+                            now running live with automated daily trades. Check the dashboard to see which model is winning.
                         </p>
-                        <p class="disclaimer">* Point‑in‑time backtest (survivorship bias removed). Not live trading / not financial advice.</p>
+                        <p class="disclaimer">Plot twist so far: the simplest approach is ahead. Paper trading only.</p>
                     </div>
                     <div class="project-metrics">
                         <div class="metric">
-                            <span class="metric-value positive">+17.3%</span>
-                            <span class="metric-label">CAGR</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value negative">-30.6%</span>
-                            <span class="metric-label">Max DD</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">2016-25</span>
-                            <span class="metric-label">Period</span>
+                            <span class="metric-value">9 Years</span>
+                            <span class="metric-label">Backtested</span>
                         </div>
                         <div class="metric">
                             <span class="metric-value">503</span>
-                            <span class="metric-label">Tickers</span>
+                            <span class="metric-label">Stocks Tracked</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">Models Live</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value positive">Daily</span>
+                            <span class="metric-label">Automated</span>
                         </div>
                     </div>
                     <ul class="project-tech">
                         <li>Python</li>
                         <li>XGBoost</li>
+                        <li>TensorFlow</li>
                         <li>Pandas</li>
                         <li>GitHub Actions</li>
                         <li>Streamlit</li>
-                        <li>SQLite</li>
                     </ul>
                     <div class="project-links">
+                        <a href="https://paper-trader-ai.streamlit.app/" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Live Dashboard
+                        </a>
                         <a href="https://github.com/PAT0216/paper-trader" target="_blank" class="project-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                             </svg>
-                            View on GitHub
+                            GitHub
                         </a>
                     </div>
                 </div>
@@ -239,18 +246,15 @@
                             <span class="terminal-title">paper-trader</span>
                         </div>
                         <div class="terminal-body">
-                            <pre><code><span class="comment"># Run momentum strategy</span>
-<span class="prompt">$</span> python main.py --strategy momentum
+                            <pre><code><span class="comment"># Paper Trader AI</span>
+<span class="prompt">$</span> python main.py --status
 
-<span class="output">Loading S&P 500 data... ✓</span>
-<span class="output">Computing 12-month momentum factors...</span>
-<span class="output">Applying 15% stop-loss protection...</span>
-<span class="output">Selecting top 10 stocks...</span>
+<span class="output">System:  </span><span class="value-green">LIVE</span> since Oct 2025
+<span class="output">Data:    4.3M+ rows | 503 tickers</span>
+<span class="output">Models:  Momentum vs XGBoost vs LSTM</span>
 
-<span class="success">Point‑in‑Time Backtest (2016–2025):</span>
-<span class="metric-line">  CAGR:        <span class="value-green">17.3%</span></span>
-<span class="metric-line">  Max DD:      <span class="value-red">-30.6%</span></span>
-<span class="metric-line">  vs S&P 500:  <span class="value-green">+2.3% CAGR</span></span></code></pre>
+<span class="success">All systems running autonomously.</span>
+<span class="metric-line">Current leader? Check the dashboard →</span></code></pre>
                         </div>
                     </div>
                 </div>
