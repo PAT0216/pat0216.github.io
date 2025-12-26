@@ -1112,11 +1112,14 @@ body {
     }
     
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
     
     .typing-text {
         white-space: normal;
+        word-break: break-word;
     }
     
     .hero-stats {
@@ -1188,7 +1191,11 @@ body {
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .typing-text {
+        font-size: 0.85rem;
     }
     
     .hero-stats {
