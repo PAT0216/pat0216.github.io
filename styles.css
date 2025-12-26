@@ -1111,6 +1111,14 @@ body {
         display: flex;
     }
     
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .typing-text {
+        white-space: normal;
+    }
+    
     .hero-stats {
         flex-wrap: wrap;
         gap: 24px;
@@ -1177,6 +1185,10 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
     }
     
     .hero-stats {
