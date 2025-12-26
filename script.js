@@ -167,9 +167,12 @@ function initTypingEffect() {
     ];
 
     // Lock the width of the typing area to avoid layout shifts while text deletes/types
+    // Only on desktop - on mobile let it wrap naturally
     const maxLen = roles.reduce((m, r) => Math.max(m, r.length), 0);
     typingElement.style.display = 'inline-block';
-    typingElement.style.minWidth = `${maxLen}ch`;
+    if (window.innerWidth > 768) {
+        typingElement.style.minWidth = `${maxLen}ch`;
+    }
 
     let roleIndex = 0;
     let charIndex = 0;
