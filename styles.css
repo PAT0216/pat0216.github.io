@@ -50,6 +50,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -58,6 +59,8 @@ body {
     line-height: 1.7;
     color: var(--text-primary);
     background-color: var(--bg-primary);
+    overflow-x: hidden;
+    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1213,8 +1216,21 @@ body {
         font-size: 1.75rem;
     }
     
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
     .project-featured {
-        padding: 20px;
+        padding: 16px;
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 0;
+        width: calc(100% + 32px);
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
     }
     
     .project-metrics {
@@ -1240,11 +1256,16 @@ body {
     
     .project-tech {
         gap: 6px;
+        flex-wrap: wrap;
     }
     
     .project-tech span {
         font-size: 0.7rem;
         padding: 4px 8px;
+    }
+    
+    .terminal {
+        display: none;
     }
 }
 
