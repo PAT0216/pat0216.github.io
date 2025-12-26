@@ -625,6 +625,7 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 .project-label {
@@ -645,6 +646,8 @@ body {
 .project-description {
     color: var(--text-secondary);
     margin-bottom: 30px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .project-description strong {
