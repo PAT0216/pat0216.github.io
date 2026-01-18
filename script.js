@@ -160,10 +160,10 @@ function initTypingEffect() {
     if (!typingElement) return;
 
     const roles = [
-        'Quant Aspirant | Data Science',
-        'Financial Analyst',
+        'Data Scientist | Financial Analytics',
         'ML Engineer',
-        'Aspiring Algorithmic Trader'
+        'Financial Analyst',
+        'Data Analyst'
     ];
 
     // Lock the width of the typing area to avoid layout shifts while text deletes/types
