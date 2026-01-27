@@ -129,16 +129,16 @@
             </p>
             <div class="hero-stats">
                 <div class="stat">
+                    <span class="stat-value">+18.65%</span>
+                    <span class="stat-label">4-Month Return (Live)</span>
+                </div>
+                <div class="stat">
                     <span class="stat-value">4.3M+</span>
                     <span class="stat-label">Data Points Processed</span>
                 </div>
                 <div class="stat">
                     <span class="stat-value">3</span>
                     <span class="stat-label">Models Competing Live</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">9 Years</span>
-                    <span class="stat-label">Backtested (2016–2025)</span>
                 </div>
             </div>
             <div class="hero-cta">
@@ -258,28 +258,28 @@
                         <p>
                             <strong>I built a trading system that runs itself.</strong> Three strategies compete
                             head-to-head on the S&P 500: momentum, XGBoost, and LSTM. Backtested on 9 years of data,
-                            now running live with automated daily trades. Check the dashboard to see which model is
-                            winning.
+                            now running live with automated daily trades.
                         </p>
-                        <p class="disclaimer">Plot twist so far: the simplest approach is ahead. Paper trading only.
+                        <p class="disclaimer"><strong>Live results (Oct 2025 – Jan 2026):</strong> Momentum leads at
+                            +18.65% return (vs SPY +3.94%), 2.04 Sharpe. Paper trading only.
                         </p>
                     </div>
                     <div class="project-metrics">
                         <div class="metric">
-                            <span class="metric-value">2016–25</span>
-                            <span class="metric-label">Backtested</span>
+                            <span class="metric-value positive">+18.65%</span>
+                            <span class="metric-label">Best Return</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-value">503</span>
-                            <span class="metric-label">Stocks</span>
+                            <span class="metric-value">2.04</span>
+                            <span class="metric-label">Sharpe Ratio</span>
                         </div>
                         <div class="metric">
                             <span class="metric-value">3</span>
                             <span class="metric-label">Models Live</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-value positive">Daily</span>
-                            <span class="metric-label">Automated</span>
+                            <span class="metric-value">4.3M+</span>
+                            <span class="metric-label">Data Points</span>
                         </div>
                     </div>
                     <ul class="project-tech">
@@ -309,6 +309,49 @@
                             GitHub
                         </a>
                     </div>
+
+                    <!-- Technical Details - Recruiter Focused -->
+                    <details class="technical-details">
+                        <summary class="details-toggle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                            Technical Details & Risk Metrics
+                        </summary>
+                        <div class="details-content">
+                            <div class="details-grid">
+                                <div class="details-card">
+                                    <h5>Risk Management</h5>
+                                    <ul>
+                                        <li><strong>Max Drawdown:</strong> -9.1% (vs SPY -5.1%)</li>
+                                        <li><strong>Stop-Loss:</strong> 15% per position</li>
+                                        <li><strong>Position Limits:</strong> 15% per stock, 30% per sector</li>
+                                        <li><strong>Transaction Costs:</strong> 5 bps slippage modeled</li>
+                                    </ul>
+                                </div>
+                                <div class="details-card">
+                                    <h5>Strategy Breakdown</h5>
+                                    <ul>
+                                        <li><strong>Momentum:</strong> 12-1 month price factor (Fama-French)</li>
+                                        <li><strong>ML:</strong> XGBoost + 15 features (RSI, MACD, etc.)</li>
+                                        <li><strong>DL:</strong> LSTM with 60-day sequences</li>
+                                        <li><strong>Universe:</strong> S&P 500 (503 stocks)</li>
+                                    </ul>
+                                </div>
+                                <div class="details-card">
+                                    <h5>Engineering</h5>
+                                    <ul>
+                                        <li><strong>Tests:</strong> 75 unit tests with CI/CD</li>
+                                        <li><strong>Automation:</strong> 6 GitHub Actions workflows</li>
+                                        <li><strong>Infrastructure:</strong> Docker-ready, SQLite cache</li>
+                                        <li><strong>Data Quality:</strong> Point-in-time universe (no look-ahead bias)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
                 </div>
                 <div class="project-featured-visual">
                     <div class="terminal">
@@ -319,15 +362,15 @@
                             <span class="terminal-title">paper-trader</span>
                         </div>
                         <div class="terminal-body">
-                            <pre><code><span class="comment"># Paper Trader AI</span>
+                            <pre><code><span class="comment"># Paper Trader AI - Live Performance</span>
 <span class="prompt">$</span> python main.py --status
 
 <span class="output">System:  </span><span class="value-green">LIVE</span> since Oct 2025
-<span class="output">Data:    4.3M+ rows | 503 tickers</span>
-<span class="output">Models:  Momentum vs XGBoost vs LSTM</span>
+<span class="output">Leader:  </span><span class="value-green">Momentum +18.65%</span> (SPY: +3.94%)
+<span class="output">Sharpe:  2.04 | Excess: +14.71%</span>
 
-<span class="success">All systems running autonomously.</span>
-<span class="metric-line">Current leader? Check the dashboard →</span></code></pre>
+<span class="success">All 3 models running autonomously.</span>
+<span class="metric-line">View live dashboard for real-time updates →</span></code></pre>
                         </div>
                     </div>
                 </div>
