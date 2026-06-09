@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initTypingEffect();
     initChartAnimation();
+    initDetailsAnimation();
 });
 
 // ============================================
@@ -160,10 +161,11 @@ function initTypingEffect() {
     if (!typingElement) return;
 
     const roles = [
-        'Data Scientist | Financial Analytics',
-        'ML Engineer',
-        'Financial Analyst',
-        'Data Analyst'
+        'Data Scientist',
+        'Machine Learning Engineer',
+        'AI / GenAI Developer',
+        'Master of Data Science Candidate',
+        'Financial Data Analyst'
     ];
 
     // Lock the width of the typing area to avoid layout shifts while text deletes/types
@@ -348,4 +350,92 @@ function initCursorTrail() {
 
 // Uncomment to enable cursor trail:
 // initCursorTrail();
+
+
+// ============================================
+// DETAILS SLIDE ANIMATION
+// ============================================
+function initDetailsAnimation() {
+    document.querySelectorAll('.technical-details').forEach(details => {
+        const summary = details.querySelector('.details-toggle');
+        const content = details.querySelector('.details-content');
+        
+        if (!summary || !content) return;
+        
+        // Disable default toggle behavior so we can animate it
+        summary.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // If the element is currently animating, ignore the click
+            if (details.classList.contains('is-animating')) return;
+            
+            details.classList.add('is-animating');
+            
+            if (details.hasAttribute('open')) {
+                // Closing animation
+                const height = content.offsetHeight;
+                content.style.height = `${height}px`;
+                content.style.overflow = 'hidden';
+                
+                // Force a reflow
+                content.offsetHeight;
+                
+                // Set transition properties
+                content.style.transition = 'height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease';
+                content.style.height = '0px';
+                content.style.opacity = '0';
+                content.style.paddingTop = '0px';
+                content.style.paddingBottom = '0px';
+                
+                details.classList.remove('is-active');
+                
+                content.addEventListener('transitionend', function handler(e) {
+                    if (e.propertyName === 'height') {
+                        details.removeAttribute('open');
+                        details.classList.remove('is-animating');
+                        content.style.height = '';
+                        content.style.overflow = '';
+                        content.style.transition = '';
+                        content.style.opacity = '';
+                        content.style.paddingTop = '';
+                        content.style.paddingBottom = '';
+                        content.removeEventListener('transitionend', handler);
+                    }
+                });
+            } else {
+                // Opening animation
+                // Set open attribute immediately so it renders, but hide content
+                content.style.height = '0px';
+                content.style.opacity = '0';
+                content.style.overflow = 'hidden';
+                content.style.paddingTop = '0px';
+                content.style.paddingBottom = '0px';
+                
+                details.setAttribute('open', '');
+                details.classList.add('is-active');
+                
+                // Force a reflow to calculate target height
+                const targetHeight = content.scrollHeight;
+                
+                // Set transition and animate
+                content.style.transition = 'height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, padding 0.35s ease';
+                // Reset padding inline styles so it takes css padding values
+                content.style.paddingTop = '';
+                content.style.paddingBottom = '';
+                content.style.height = `${targetHeight}px`;
+                content.style.opacity = '1';
+                
+                content.addEventListener('transitionend', function handler(e) {
+                    if (e.propertyName === 'height') {
+                        details.classList.remove('is-animating');
+                        content.style.height = '';
+                        content.style.overflow = '';
+                        content.style.transition = '';
+                        content.removeEventListener('transitionend', handler);
+                    }
+                });
+            }
+        });
+    });
+}
 
